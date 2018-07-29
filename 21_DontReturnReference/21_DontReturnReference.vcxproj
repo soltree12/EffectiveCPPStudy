@@ -20,7 +20,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{DC8AF545-676E-4438-8676-3119D6013998}</ProjectGuid>
+    <ProjectGuid>{F76FF8B6-5F28-4D09-8B89-70A708A5CDA1}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>My21DontReturnReference</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
@@ -143,7 +143,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="..\..\새 폴더 (5)\21_DontReturnReference\Source.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

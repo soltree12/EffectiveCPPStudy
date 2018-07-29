@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Window.cpp">
+    <ClCompile Include="..\..\새 폴더 (5)\20_PassByConstReference\Window.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

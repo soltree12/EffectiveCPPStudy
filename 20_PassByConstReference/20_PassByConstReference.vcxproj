@@ -20,7 +20,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{6CB13FD6-AD93-471E-94F7-596EEF3A643F}</ProjectGuid>
+    <ProjectGuid>{B1F99853-D580-4BC1-8553-8A1C2718162D}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>My20PassByConstReference</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
@@ -143,7 +143,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Window.cpp" />
+    <ClCompile Include="..\..\새 폴더 (5)\20_PassByConstReference\Window.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
