@@ -16,10 +16,8 @@ namespace WidgetStuff { // std가 아닌 새로운 네임스페이스
 
 
 	template<typename T>
-	class Widget { //pimpl 관용구를 사용한 클래스
+	class Widget { //pimpl(pointer to implementation) 관용구를 사용한 클래스
 	public:
-		Widget(const Widget& rhs);
-		Widget(WidgetImpl *pIm) : pImpl(pIm) {}
 		Widget& operator=(const Widget& rhs)
 		{
 			*pImpl = *(rhs.pImpl); // Widget을 복사하기 위해, 자신의 WidgetImpl 객체를 복사합니다.
@@ -37,7 +35,7 @@ namespace WidgetStuff { // std가 아닌 새로운 네임스페이스
 		}
 
 	private:
-		WidgetImpl * pImpl; // Widget의 실제 데이터를 가진 객체에 대한 포인터
+		T *pImpl; // Widget의 실제 데이터를 가진 객체에 대한 포인터
 	};
 
 	template<typename T> // 비멤버 swap 함수

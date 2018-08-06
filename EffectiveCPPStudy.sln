@@ -65,6 +65,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "D_Mutex", "D_Mutex\D_Mutex.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Z_Notepad", "Z_Notepad\Z_Notepad.vcxproj", "{49D7F92B-0335-4045-AD60-1131BCA83146}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "28_DoNotReturnHandle", "28_DoNotReturnHandle\28_DoNotReturnHandle.vcxproj", "{BEF34CB9-D750-4D5D-A086-13A63C3E82E0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -321,6 +323,14 @@ Global
 		{49D7F92B-0335-4045-AD60-1131BCA83146}.Release|x64.Build.0 = Release|x64
 		{49D7F92B-0335-4045-AD60-1131BCA83146}.Release|x86.ActiveCfg = Release|Win32
 		{49D7F92B-0335-4045-AD60-1131BCA83146}.Release|x86.Build.0 = Release|Win32
+		{BEF34CB9-D750-4D5D-A086-13A63C3E82E0}.Debug|x64.ActiveCfg = Debug|x64
+		{BEF34CB9-D750-4D5D-A086-13A63C3E82E0}.Debug|x64.Build.0 = Debug|x64
+		{BEF34CB9-D750-4D5D-A086-13A63C3E82E0}.Debug|x86.ActiveCfg = Debug|Win32
+		{BEF34CB9-D750-4D5D-A086-13A63C3E82E0}.Debug|x86.Build.0 = Debug|Win32
+		{BEF34CB9-D750-4D5D-A086-13A63C3E82E0}.Release|x64.ActiveCfg = Release|x64
+		{BEF34CB9-D750-4D5D-A086-13A63C3E82E0}.Release|x64.Build.0 = Release|x64
+		{BEF34CB9-D750-4D5D-A086-13A63C3E82E0}.Release|x86.ActiveCfg = Release|Win32
+		{BEF34CB9-D750-4D5D-A086-13A63C3E82E0}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
