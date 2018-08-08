@@ -1,32 +1,11 @@
-#include <iostream>
+#pragma once
 
-class CData
-{
-public:
-	CData()
-	{
-		memset(m_arrDataList, 0, sizeof(m_arrDataList));
-	}
-	CData(const CData& oldCData)
-	{
-		*this = oldCData;
-		std::cout << "CData형 복사 생성자 호출" << std::endl;
-	}
-
-private:
-	int m_arrDataList[10];
-};
-
-CData& FuncA(CData& _data)
-{
-	//CData temp(_data);
-	return _data;
-}
+#include "4.h"
 
 int main()
 {
-	CData oData;
-	FuncA(oData);
-
+	std::istream* img = NULL;
+	PrettyMenu pm;
+	pm.changeBackground(*img);
 	return 0;
 }

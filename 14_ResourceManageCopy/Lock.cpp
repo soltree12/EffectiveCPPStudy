@@ -7,26 +7,31 @@
 */
 
 #include <iostream>
-#include <mutex>
 
-void lock(std::mutex *pm); // pm이 가리키는 뮤텍스에 잠금을 겁니다.
+class Mutex
+{
 
-void unlock(std::mutex *pm); // pm이 가리키는 해당 뮤텍스의 잠금을 풉니다.
+};
 
+void lock(Mutex *pm)// pm이 가리키는 뮤텍스에 잠금을 겁니다.
+{}
+
+void unlock(Mutex *pm) // pm이 가리키는 해당 뮤텍스의 잠금을 풉니다.
+{}
 class Lock {
 public:
-	explicit Lock(std::mutex *pm) : mutexPtr(pm, unlock) // shared_ptr을 초기화하는데, 가리킬 포인터로 Mutex 객체의 포인터를 사용하고 삭제자로 unlock 함수를 사용합니다.
+	explicit Lock(Mutex *pm) : mutexPtr(pm, unlock) // shared_ptr을 초기화하는데, 가리킬 포인터로 Mutex 객체의 포인터를 사용하고 삭제자로 unlock 함수를 사용합니다.
 	{
 		lock(mutexPtr.get()); //자원을 획득합니다.
 	}
 
-	~Lock(){unlock(mutexPtr) } // 자원을 해제합니다.
+	~Lock(){unlock(mutexPtr.get()) } // 자원을 해제합니다.
 
 private:
-	std::tr1::shared_ptr<std::mutex> *mutexPtr; // 원시 포인터 대신에 shared_ptr을 사용합니다.
+	std::shared_ptr<Mutex> mutexPtr; // 원시 포인터 대신에 shared_ptr을 사용합니다.
 };
 
-std::mutex m;
+Mutex m;
 
 void func()
 {
