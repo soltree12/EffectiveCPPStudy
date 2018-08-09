@@ -19,7 +19,7 @@ void showString(const std::string& str)
 std::string encryptPassword(const std::string& password)
 {
 	using namespace std;
-	if (password.length() < MinimumPass wordLength) {
+	if (password.length() < MinimumPasswordLength) {
 		throw logic_error("Password is too short");
 	}
 	string encrypted(password); //변수를 정의함과 동시에 초기화, 이때 복사 생성자가 쓰임.
