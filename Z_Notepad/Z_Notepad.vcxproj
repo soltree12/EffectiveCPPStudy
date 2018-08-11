@@ -144,6 +144,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp" />
+    <ClCompile Include="Source2.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="1.h" />

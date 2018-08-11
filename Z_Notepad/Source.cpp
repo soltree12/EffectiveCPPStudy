@@ -1,25 +1,20 @@
-#include <iostream>
+/*#include <iostream>
 
-class C {
-public:
-	void f1() { std::cout << "c_f1" << std::endl; };
-	virtual void f2(){ std::cout << "c_f2" << std::endl; };
-};
+int arr[5][8];
+int weight[8];
+int value[8];
 
-class D : public C {
-public:
-	void f1(){ std::cout << "d_f1" << std::endl; };
-	virtual void f2(){ std::cout << "d_f2" << std::endl; };
-	void f3() { f1(); }
-};
-
-void ff(C *c) {
-	c->f2();
-}
-
-int main()
+int getMaxValue(int index, int capacity)
 {
-	D d;
-	ff(&d);
-}
+	int selected=0, unselected=0, maxValue=0;
+	
+	int unselected = arr[index][capacity - 1];
+	if (capacity >= weight[index])
+	{
+		selected = getMaxValue(index - 1, capacity-weight[index]) + value[index];
+	}
+	maxValue = max(selected, unselected);
+	arr[index][capacity] = maxValue;
 
+	return 1;
+}*/
