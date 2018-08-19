@@ -31,7 +31,7 @@ void doProcessing(Widget& w)
 		temp.swap(w);
 		std::cout << "temp::_size : " << temp.size()<<std::endl;
 	}
-}k
+};
 
 
 /* 
