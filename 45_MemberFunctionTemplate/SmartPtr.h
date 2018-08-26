@@ -16,7 +16,7 @@ public:
 	template<typename U>
 	SmartPtr(const SmartPtr<U>& other) : heldPtr(other.get()){}
 	SmartPtr(T* p) : heldPtr(p){}
-	T* get() const { return heldPtr; }
+	T* get() const { return heldPtr; } // T로 암시적 변환이 가능한 형태일때만 반환된다.
 	
 private:
 	T * heldPtr;
